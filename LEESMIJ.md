@@ -98,3 +98,6 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Nieuwe pagina /plan-kennismaking (30 minuten, gratis, Proton Calendar, zelfde boekingslink als onlinebrainspotting.nl),
   knop "Kennismaken" in de navigatie; op mobiel vallen "Over mij" en "Contact" weg uit de bovenbalk.
 - Formulier verstuurt nu als formulier@dekatalysator.nl via een eigen Resend-account. CSS kat-v10, JS kat-v2.
+
+## v3.2 (01-11-2026): terrasfoto zonder gieter
+- Nieuwe versie van de kopfoto op /werkwijze (werkwijze-terras2-*.jpg).
