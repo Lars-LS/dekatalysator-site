@@ -37,7 +37,12 @@ export async function handleContact(request, env) {
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ from: VAN, to: [AAN], reply_to: email, subject: `dekatalysator.nl: bericht van ${naam} (${rol})`, html }),
+    body: JSON.stringify({
+      from: VAN, to: [AAN], reply_to: email,
+      subject: `Contactformulier: ${naam} (${rol})`,
+      html,
+      text: `Naam: ${naam}\nE-mail: ${email}\nRol: ${rol}\n\n${bericht}\n`,
+    }),
   });
   if (!res.ok) {
     console.error('Resend-fout', res.status, await res.text());

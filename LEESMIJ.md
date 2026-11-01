@@ -101,3 +101,4 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 
 ## v3.2 (01-11-2026): terrasfoto zonder gieter
 - Nieuwe versie van de kopfoto op /werkwijze (werkwijze-terras2-*.jpg).
+- Formuliermail met platte-tekstversie naast HTML, onderwerp "Contactformulier: naam (rol)".
