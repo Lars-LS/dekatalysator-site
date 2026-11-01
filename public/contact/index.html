@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | De Katalysator</title>
+<meta name="description" content="Neem contact op met Lars Lutje Schipholt voor een vraag, een offerte of een kennismaking.">
+<link rel="canonical" href="https://dekatalysator.nl/contact">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Contact | De Katalysator">
+<meta property="og:description" content="Neem contact op met Lars Lutje Schipholt voor een vraag, een offerte of een kennismaking.">
+<meta property="og:url" content="https://dekatalysator.nl/contact">
+<meta property="og:image" content="https://dekatalysator.nl/optimized/kop-lars-1400w.jpg">
+<link rel="icon" href="/favicon-48.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/assets/kat-v11.css">
+<script src="/assets/kat-v2.js" defer></script>
+
+</head>
+<body>
+<a class="overslaan" href="#inhoud">Naar de inhoud</a>
+
+<header class="kop">
+  <div class="wrap">
+    <a class="merk" href="/"><picture><source type="image/webp" srcset="/optimized/logo-112.webp 1x, /optimized/logo-224.webp 2x"><img src="/optimized/logo-112.png" srcset="/optimized/logo-224.png 2x" width="96" height="112" alt=""></picture><span><b>De Katalysator</b><small>Coaching, Therapie &amp; Intervisie</small></span></a>
+    <nav aria-label="Hoofdmenu">
+      <a href="/werkwijze">Werkwijze</a>
+      <a href="/over-mij">Over mij</a>
+      <a href="/werkgevers">Voor werkgevers</a>
+      <a href="/contact" aria-current="page">Contact</a>
+      <a class="knop knop--klein" href="/plan-kennismaking">Kennismaken</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inhoud">
+
+  <section class="paginakop contact" id="contact">
+    <div class="wrap">
+      <div class="contact__raster">
+        <div>
+          <p class="label">Contact</p>
+          <h1>Neem contact op</h1>
+          <p class="lead">Voor een vraag, een offerte of een kennismaking. Ik reageer meestal binnen twee werkdagen.</p>
+          <p class="contact__kennismaking">Liever meteen een moment kiezen? <a class="verder" href="/plan-kennismaking">Plan een kennismaking</a></p>
+          <p class="contact__werkgever">Werkgever, HR of casemanager? Op <a href="/werkgevers">Voor werkgevers</a> lees je hoe een traject via de werkgever loopt.</p>
+        </div>
+        <form class="formulier" action="/api/contact" method="post" novalidate>
+          <label>Naam<input name="naam" autocomplete="name" required maxlength="120"></label>
+          <label>E-mail<input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+          <fieldset>
+            <legend>Ik ben</legend>
+            <label class="keuze"><input type="radio" name="rol" value="cliënt" checked> op zoek naar coaching voor mezelf</label>
+            <label class="keuze"><input type="radio" name="rol" value="werkgever"> werkgever, HR of casemanager</label>
+          </fieldset>
+          <label>Bericht<textarea name="bericht" rows="5" required maxlength="5000"></textarea></label>
+          <label class="honing" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+          <input type="hidden" name="t" value="">
+          <button class="knop" type="submit">Verstuur</button>
+          <p class="formulier__melding" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="streep" aria-hidden="true"></div>
+<footer class="voet">
+  <div class="wrap voet__raster">
+    <div>
+      <p>De Katalysator Coaching, Therapie &amp; Intervisie</p>
+      <p>De Katalysator is een handelsnaam van Lars Lutje Schipholt</p>
+      <p>Organisatienummer NO 931 822 632</p>
+      <p>Stupulmyra 38, 3528 Hedalen, Noorwegen</p>
+    </div>
+    <nav aria-label="Voet">
+      <a href="/">Home</a>
+      <a href="/werkwijze">Werkwijze</a>
+      <a href="/over-mij">Over mij</a>
+      <a href="/werkgevers">Voor werkgevers</a>
+      <a href="/plan-kennismaking">Plan een kennismaking</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

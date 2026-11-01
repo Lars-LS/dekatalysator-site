@@ -1,12 +1,12 @@
 # dekatalysator.nl — werkafspraken voor Claude
 
 - Site voor wie coaching zoekt bij stress en veerkracht in het werk (je-vorm, geen therapie als hoofdboodschap).
-  Pagina's: / (start), /werkwijze (de diepte), /over-mij, /plan-kennismaking (Proton Calendar-link) en /werkgevers (u-vorm, voor HR, casemanagers en bedrijfsartsen:
+  Pagina's: / (start), /werkwijze (de diepte), /over-mij, /plan-kennismaking (Proton Calendar-link), /contact (formulier) en /werkgevers (ook je-vorm, nooit 'u', voor HR, casemanagers en bedrijfsartsen:
   vergoeding, traject, offerte, facturatie, vertrouwelijkheid). Deze link kan op offertes en in de mailhandtekening.
 - Cloudflare Worker, zelfde opzet als onlinebrainspotting.nl en norwayretreat.com: `public/` = pagina en assets,
   `src/index.js` = alleen redirects (oude WordPress-paden), `wrangler.jsonc` = config.
 - Sinds v3.0 gebouwd zoals onlinebrainspotting.nl: bron in `bouw/paginas/*.html` (eerste regel JSON-metadata),
-  kop, navigatie, contactblok (`{{CONTACT}}`) en voet in `bouw/build.mjs`. Bouwen met `npm run bouw`.
+  kop, navigatie, afsluitend blok (`{{CONTACT}}`: knoppen naar kennismaking en contact), formulier (`{{FORMULIER}}`, alleen op /contact) en voet in `bouw/build.mjs`. Bouwen met `npm run bouw`.
   Bewerk nooit `public/**/index.html` direct. Commit bron én uitvoer; Cloudflare bouwt niets.
 - Contactformulier: `public/assets/kat-vN.js` post naar `/api/contact`, afgehandeld in `src/contact.js`
   (honingpot, minimale invultijd, linkfilter) en verstuurd via een eigen Resend-account naar lars@dekatalysator.nl,

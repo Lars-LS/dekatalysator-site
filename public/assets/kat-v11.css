@@ -180,3 +180,10 @@ p{margin:0}
 .kennismaking__agenda{margin-top:24px;max-width:560px}
 @media (max-width:760px){.knop--klein{padding:6px 14px;font-size:14px}}
 @media (max-width:760px){.kop nav a[href="/over-mij"],.kop nav a[href="#contact"]{display:none}.kop nav{gap:16px}}
+
+/* Contactpagina en afsluitend blok */
+.paginakop.contact .contact__raster{align-items:start}
+.contact__kennismaking,.contact__werkgever{margin-top:16px;max-width:520px}
+.contact__werkgever{font-size:15px;color:var(--zacht)}
+.afsluiting .knoppen{margin-top:24px}
+.afsluiting p{max-width:620px}

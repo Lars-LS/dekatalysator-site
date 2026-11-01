@@ -5,7 +5,7 @@ import { handleContact } from './contact.js';
 
 // Pagina's van de oude WordPress-site gaan naar de one-pager.
 const NAAR_HOME = new Set([
-  '/voor-wie', '/mijn-aanbod', '/contact',
+  '/voor-wie', '/mijn-aanbod',
   '/schrijf-je-in-op-mijn-nieuwsbrief', '/privacy-statement-de-katalysator-coaching',
   '/mijn-aanbod/je-lichaam-en-intuitie-als-kompas', '/mijn-aanbod/begeleide-intervisie',
 ]);

@@ -16,7 +16,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-<link rel="stylesheet" href="/assets/kat-v10.css">
+<link rel="stylesheet" href="/assets/kat-v11.css">
 <script src="/assets/kat-v2.js" defer></script>
 
 </head>
@@ -30,7 +30,7 @@
       <a href="/werkwijze">Werkwijze</a>
       <a href="/over-mij">Over mij</a>
       <a href="/werkgevers" aria-current="page">Voor werkgevers</a>
-      <a href="#contact">Contact</a>
+      <a href="/contact">Contact</a>
       <a class="knop knop--klein" href="/plan-kennismaking">Kennismaken</a>
     </nav>
   </div>
@@ -43,7 +43,7 @@
       <div>
         <p class="label">Voor werkgevers, HR en casemanagers</p>
         <h1>Coaching bij stress en duurzame inzetbaarheid</h1>
-        <p class="lead">Een werknemer heeft mij als coach gekozen en vraagt u het traject te vergoeden. Hier leest u wat het traject inhoudt, hoe het administratief loopt en hoe de vertrouwelijkheid geregeld is.</p>
+        <p class="lead">Een werknemer heeft mij als coach gekozen en vraagt je het traject te vergoeden. Hier lees je wat het traject inhoudt, hoe het administratief loopt en hoe de vertrouwelijkheid geregeld is.</p>
       </div>
       <figure class="paginakop__foto">
         <img src="/optimized/podcast-collage-800w.jpg" srcset="/optimized/podcast-collage-800w.jpg 800w, /optimized/podcast-collage-1400w.jpg 1400w" sizes="(max-width:860px) 100vw, 520px" width="1400" height="791" alt="Vier beelden van Lars tijdens een podcastgesprek" fetchpriority="high">
@@ -102,7 +102,9 @@
   </section>
 
   <section class="sectie" id="coach">
-    <div class="wrap smal">
+    <div class="wrap">
+      <div class="over">
+        <div>
       <h2>Over de coach</h2>
       <div class="stapel">
         <p>Lars Lutje Schipholt, integraal lichaamsgericht coach en Brainspotting-therapeut, opgeleid tot en met fase 5 bij David Grand, de grondlegger van de methode. Ervaring met loopbaan- en re-integratietrajecten. Werkt online met cliënten uit Nederland en Vlaanderen, vanuit Noorwegen.</p>
@@ -118,32 +120,19 @@
         <dd>Twaalf jaar leiding gegeven aan een eigen adviesbureau, inno-V, inclusief personeelszaken. Daarnaast jarenlang gewerkt voor en in organisaties, als adviseur en als begeleider van veranderingen. Kent werkdruk van twee kanten: die van de werkgever en die van de werknemer.</dd>
       </dl>
       <p class="noot">Ervaringen van cliënten staan op de <a href="/#ervaringen">startpagina</a>, meer achtergrond bij <a href="/over-mij">Over mij</a>. Loopbaan en opleidingen op <a href="https://www.linkedin.com/in/larsls/" rel="noopener">LinkedIn</a>.</p>
+        </div>
+        <figure>
+          <img src="/optimized/coach-portret-800w.jpg" srcset="/optimized/coach-portret-400w.jpg 400w, /optimized/coach-portret-800w.jpg 800w" sizes="(max-width:760px) 260px, 280px" width="800" height="997" alt="Portret van Lars Lutje Schipholt" loading="lazy" decoding="async">
+        </figure>
+      </div>
     </div>
   </section>
 
-  <section class="sectie sectie--band contact" id="contact">
-    <div class="wrap">
-      <div class="contact__raster">
-        <div>
-          <h2>Contact</h2>
-          <p>Voor een vraag of een offerte. Ik reageer meestal binnen twee werkdagen.</p>
-          <p>Liever meteen een moment kiezen? <a class="verder" href="/plan-kennismaking">Plan een kennismaking</a></p>
-        </div>
-        <form class="formulier" action="/api/contact" method="post" novalidate>
-          <label>Naam<input name="naam" autocomplete="name" required maxlength="120"></label>
-          <label>E-mail<input name="email" type="email" autocomplete="email" required maxlength="200"></label>
-          <fieldset>
-            <legend>Ik ben</legend>
-            <label class="keuze"><input type="radio" name="rol" value="cliënt" checked> op zoek naar coaching voor mezelf</label>
-            <label class="keuze"><input type="radio" name="rol" value="werkgever"> werkgever, HR of casemanager</label>
-          </fieldset>
-          <label>Bericht<textarea name="bericht" rows="5" required maxlength="5000"></textarea></label>
-          <label class="honing" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
-          <input type="hidden" name="t" value="">
-          <button class="knop" type="submit">Verstuur</button>
-          <p class="formulier__melding" role="status" aria-live="polite"></p>
-        </form>
-      </div>
+  <section class="sectie sectie--band afsluiting" id="contact">
+    <div class="wrap smal">
+      <h2>Kennismaken of een vraag?</h2>
+      <p>Plan een gratis kennismaking van een half uur via Zoom, of stel eerst je vraag.</p>
+      <div class="knoppen"><a class="knop" href="/plan-kennismaking">Plan een kennismaking</a><a class="knop knop--rand" href="/contact">Stel een vraag</a></div>
     </div>
   </section>
 
@@ -164,7 +153,7 @@
       <a href="/over-mij">Over mij</a>
       <a href="/werkgevers">Voor werkgevers</a>
       <a href="/plan-kennismaking">Plan een kennismaking</a>
-      <a href="/#contact">Contact</a>
+      <a href="/contact">Contact</a>
     </nav>
   </div>
 </footer>

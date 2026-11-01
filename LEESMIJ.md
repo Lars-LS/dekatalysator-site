@@ -109,3 +109,9 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
   podcastcollage met link, Verder kijken. Menu "Over mij" en oude /over-lars(-2) wijzen er nu naartoe.
 - Startpagina: Over mij ingekort met link "Meer over mij"; Verder kijken verhuisd naar /over-mij.
 - Contactblok licht (zonder band) op pagina's waar de sectie ervoor al een band heeft (metadata contactLicht).
+
+## v3.4 (01-11-2026): contactpagina, je-vorm, foto's
+- Aparte pagina /contact met het formulier; menu en voet verwijzen ernaar. Op de andere pagina's een afsluitend blok
+  "Kennismaken of een vraag?" met twee knoppen. Oude /contact niet meer naar de startpagina.
+- /werkgevers volledig in de je-vorm; bij "Over de coach" het neutrale portret (coach-portret-*.jpg).
+- Lachende foto minder rood (lars-lacht2-*.jpg: rood -13%, minder verzadiging). CSS kat-v11.

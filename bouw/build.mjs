@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const HIER = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = join(HIER, '..', 'public');
-const CSS = '/assets/kat-v10.css';
+const CSS = '/assets/kat-v11.css';
 const JS = '/assets/kat-v2.js';
 const DOMEIN = 'https://dekatalysator.nl';
 
@@ -15,7 +15,7 @@ const NAV = [
   ['/werkwijze', 'Werkwijze', 'werkwijze'],
   ['/over-mij', 'Over mij', 'over'],
   ['/werkgevers', 'Voor werkgevers', 'werkgevers'],
-  ['#contact', 'Contact', 'contact'],
+  ['/contact', 'Contact', 'contact'],
 ];
 
 const kop = (m) => `<!DOCTYPE html>
@@ -56,13 +56,15 @@ ${NAV.map(([href, label, id]) => `      <a href="${href}"${m.actief === id ? ' a
 <main id="inhoud">
 `;
 
-const CONTACT = `  <section class="sectie sectie--band contact" id="contact">
+const FORMULIER = `  <section class="paginakop contact" id="contact">
     <div class="wrap">
       <div class="contact__raster">
         <div>
-          <h2>Contact</h2>
-          <p>Voor een vraag of een offerte. Ik reageer meestal binnen twee werkdagen.</p>
-          <p>Liever meteen een moment kiezen? <a class="verder" href="/plan-kennismaking">Plan een kennismaking</a></p>
+          <p class="label">Contact</p>
+          <h1>Neem contact op</h1>
+          <p class="lead">Voor een vraag, een offerte of een kennismaking. Ik reageer meestal binnen twee werkdagen.</p>
+          <p class="contact__kennismaking">Liever meteen een moment kiezen? <a class="verder" href="/plan-kennismaking">Plan een kennismaking</a></p>
+          <p class="contact__werkgever">Werkgever, HR of casemanager? Op <a href="/werkgevers">Voor werkgevers</a> lees je hoe een traject via de werkgever loopt.</p>
         </div>
         <form class="formulier" action="/api/contact" method="post" novalidate>
           <label>Naam<input name="naam" autocomplete="name" required maxlength="120"></label>
@@ -79,6 +81,15 @@ const CONTACT = `  <section class="sectie sectie--band contact" id="contact">
           <p class="formulier__melding" role="status" aria-live="polite"></p>
         </form>
       </div>
+    </div>
+  </section>
+`;
+
+const CONTACT = `  <section class="sectie sectie--band afsluiting" id="contact">
+    <div class="wrap smal">
+      <h2>Kennismaken of een vraag?</h2>
+      <p>Plan een gratis kennismaking van een half uur via Zoom, of stel eerst je vraag.</p>
+      <div class="knoppen"><a class="knop" href="/plan-kennismaking">Plan een kennismaking</a><a class="knop knop--rand" href="/contact">Stel een vraag</a></div>
     </div>
   </section>
 `;
@@ -101,7 +112,7 @@ const VOET = `
       <a href="/over-mij">Over mij</a>
       <a href="/werkgevers">Voor werkgevers</a>
       <a href="/plan-kennismaking">Plan een kennismaking</a>
-      <a href="/#contact">Contact</a>
+      <a href="/contact">Contact</a>
     </nav>
   </div>
 </footer>
@@ -113,8 +124,8 @@ for (const naam of readdirSync(join(HIER, 'paginas')).filter((f) => f.endsWith('
   const bron = readFileSync(join(HIER, 'paginas', naam), 'utf8');
   const eerste = bron.indexOf('\n');
   const m = JSON.parse(bron.slice(4, eerste).replace(/-->\s*$/, ''));
-  const contact = m.contactLicht ? CONTACT.replace('sectie sectie--band contact', 'sectie contact') : CONTACT;
-  const inhoud = bron.slice(eerste + 1).replace('{{CONTACT}}', contact);
+  const contact = m.contactLicht ? CONTACT.replace('sectie sectie--band afsluiting', 'sectie afsluiting') : CONTACT;
+  const inhoud = bron.slice(eerste + 1).replace('{{CONTACT}}', contact).replace('{{FORMULIER}}', FORMULIER);
   const html = kop(m) + inhoud + VOET;
   const doel = naam === 'index.html' ? join(PUBLIC, 'index.html')
     : naam === '404.html' ? join(PUBLIC, '404.html')
