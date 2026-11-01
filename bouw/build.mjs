@@ -13,8 +13,8 @@ const DOMEIN = 'https://dekatalysator.nl';
 
 const NAV = [
   ['/werkwijze', 'Werkwijze', 'werkwijze'],
-  ['/werkgevers', 'Voor werkgevers', 'werkgevers'],
   ['/#over', 'Over mij', 'over'],
+  ['/werkgevers', 'Voor werkgevers', 'werkgevers'],
   ['#contact', 'Contact', 'contact'],
 ];
 
