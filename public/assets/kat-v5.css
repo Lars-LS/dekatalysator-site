@@ -64,8 +64,9 @@ p{margin:0}
 /* Ervaringen */
 .ervaring{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
 .ervaring blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.5;color:var(--inkt)}
-.ervaring figcaption{font-size:15px;color:var(--zacht)}
-.ervaring figcaption::before{content:"";display:inline-block;width:18px;height:2px;background:var(--oranje);vertical-align:middle;margin-right:10px}
+.ervaring figcaption{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--zacht)}
+.ervaring__foto{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;box-shadow:0 0 0 2px var(--vlak),0 0 0 4px var(--oranje)}
+.ervaring__initialen{display:inline-flex;align-items:center;justify-content:center;background:var(--band);color:var(--accent);font-family:var(--serif);font-size:19px}
 
 /* Kaarten en stappen */
 .kolommen{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}

@@ -45,3 +45,7 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 
 ## v1.3 (01-11-2026): ervaringen Bart Daman en Lucia Engel
 - Twee aanbevelingen van LinkedIn (2021) toegevoegd; bij Lucia een passage weggelaten (…) en "carriére" gecorrigeerd.
+
+## v1.4 (01-11-2026): foto's bij ervaringen
+- Ronde portretten (56px, 2x) bij Frank Roelen, Laurens van de Vijver en Yvonne van den Bergh; initialen bij
+  Bart Daman en Lucia Engel (geen foto). Stylesheet naar kat-v5.css.
