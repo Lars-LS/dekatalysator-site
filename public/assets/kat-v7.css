@@ -85,9 +85,9 @@ p{margin:0}
 .lijst{margin:16px 0 0;padding-left:1.2em}
 .lijst li+li{margin-top:6px}
 .lijst li::marker{color:var(--oranje)}
-.stappen{list-style:none;margin:0;padding:0;counter-reset:stap;display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-.stappen li{counter-increment:stap;background:var(--vlak);border:1px solid var(--lijn);border-radius:14px;padding:22px 22px 20px}
-.stappen li::before{content:counter(stap);display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--oranje);color:var(--inkt);font-weight:600;font-size:15px;margin-bottom:12px}
+.stappen{list-style:none;margin:0;padding:0;display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.stappen li{background:var(--vlak);border:1px solid var(--lijn);border-radius:14px;padding:22px 22px 20px}
+.stap__icoon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--band);color:var(--accent);margin-bottom:14px}
 .vertrouwelijk{margin-top:28px;background:var(--vlak);border-left:4px solid var(--teal);border-radius:0 14px 14px 0;padding:24px 26px}
 .citaat{margin-top:18px;padding-left:20px;border-left:3px solid var(--teal);color:var(--inkt)}
 
@@ -113,3 +113,13 @@ p{margin:0}
 .voet a{color:#fff}
 .voet p+p{margin-top:6px}
 
+
+/* Accent uit het logo boven sectiekoppen */
+.sectie h2::before{content:"";display:block;width:40px;height:10px;margin-bottom:16px;
+  background:radial-gradient(circle at 5px 5px,var(--teal) 4.5px,transparent 5px),radial-gradient(circle at 20px 5px,var(--oranje) 4.5px,transparent 5px),radial-gradient(circle at 35px 5px,var(--rood) 4.5px,transparent 5px)}
+.intro{max-width:720px;margin:-6px 0 24px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.knoppen .knop{margin-top:0}
+.knop--rand{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.knop--rand:hover{background:var(--accent);color:#fff}
+.kaart--accent{border-left:4px solid var(--teal)}

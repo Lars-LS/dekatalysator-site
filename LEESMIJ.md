@@ -63,3 +63,10 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
   onder 860px staat de foto boven de tekst. Ook og:image.
 - Over mij: lachend portret (lars-lacht-400/800w.jpg), rood ca. 7% teruggenomen en iets minder verzadigd.
   Oude lars-400/800w.jpg verwijderd. Stylesheet naar kat-v6.css.
+
+## v2.0 (01-11-2026): pagina gericht op de cliënt
+- Herschreven in je-vorm voor wie coaching zoekt; werkgevers krijgen een eigen sectie "Via je werkgever" (#werkgevers,
+  ook in het menu en als tweede knop in de opening) met offerte, facturatie en vertrouwelijkheid.
+- Nieuwe secties "Herken je dit?" (spanning loopt op / terugkeer na uitval); trajectstappen Kennismaking, Sessies,
+  Evaluatie, Zelfstandig verder, met lijniconen (Feather, MIT) in plaats van cijfers.
+- Drie logobolletjes (blauwgroen, oranje, rood) boven elke sectiekop. Stylesheet naar kat-v7.css.
