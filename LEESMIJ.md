@@ -57,3 +57,9 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Terug naar zes ervaringen, drie mannen en drie vrouwen, afwisselend: Frank, Maaike, Bart / Jantien, Laurens,
   Yvonne. Lucia Engel eruit (persoonlijkst van toon); haar portretbestanden blijven in public/optimized voor een
   eventuele wissel. Portret bij Maaike Pronk.
+
+## v1.6 (01-11-2026): fotokop en lachend portret
+- Opening met portret van Lars (kop-lars-800/1400/2000w.jpg) in de rechterhelft, tekst links op een zachte overloop;
+  onder 860px staat de foto boven de tekst. Ook og:image.
+- Over mij: lachend portret (lars-lacht-400/800w.jpg), rood ca. 7% teruggenomen en iets minder verzadigd.
+  Oude lars-400/800w.jpg verwijderd. Stylesheet naar kat-v6.css.
