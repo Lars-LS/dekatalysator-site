@@ -49,3 +49,7 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 ## v1.4 (01-11-2026): foto's bij ervaringen
 - Ronde portretten (56px, 2x) bij Frank Roelen, Laurens van de Vijver en Yvonne van den Bergh; initialen bij
   Bart Daman en Lucia Engel (geen foto). Stylesheet naar kat-v5.css.
+
+## v1.5 (01-11-2026): zesde ervaring en alle portretten
+- Jantien van der Meer toegevoegd (LinkedIn; "samen hangt" en "tegen komt" aaneengeschreven).
+- Portretten bij Bart Daman en Lucia Engel in plaats van initialen. CSS voor initialen blijft beschikbaar.
