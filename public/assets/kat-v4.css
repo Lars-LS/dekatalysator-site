@@ -50,16 +50,22 @@ p{margin:0}
 
 /* Opening */
 .opening{padding:clamp(56px,8vw,96px) 0 var(--ruimte)}
-.opening{position:relative}
-.opening .wrap{position:relative}
-.opening__beeld{position:absolute;right:24px;top:8px;width:clamp(180px,22vw,260px);height:auto}
-@media (max-width:900px){.opening__beeld{display:none}}
 .opening h1{max-width:16ch}
 .opening .lead{font-size:clamp(19px,1.7vw,22px);line-height:1.55;color:var(--inkt);max-width:38em;margin-top:24px}
 .opening .toelichting{max-width:40em;margin-top:18px}
-@media (min-width:901px){.opening .lead,.opening .toelichting{max-width:min(38em,calc(100% - 300px))}}
 .knop{display:inline-block;margin-top:32px;background:var(--accent);color:#fff;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:500;line-height:1.3}
 .knop:hover{background:var(--accent-donker);color:#fff}
+
+/* Beeldmerk naast een tekstsectie (desktop) */
+.met-beeld{position:relative}
+.zijbeeld{position:absolute;right:24px;top:6px;width:clamp(180px,20vw,240px);height:auto}
+@media (max-width:1000px){.zijbeeld{display:none}}
+
+/* Ervaringen */
+.ervaring{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.ervaring blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.5;color:var(--inkt)}
+.ervaring figcaption{font-size:15px;color:var(--zacht)}
+.ervaring figcaption::before{content:"";display:inline-block;width:18px;height:2px;background:var(--oranje);vertical-align:middle;margin-right:10px}
 
 /* Kaarten en stappen */
 .kolommen{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}

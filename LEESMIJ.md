@@ -36,3 +36,9 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 ## v1.1 (01-11-2026): oude blogadressen naar het juiste Substack-bericht
 - Worker stuurt oude blogpaden door naar https://lars.lutjeschipholt.nl/p/<slug> (zelfde slugs als de
   Bulk Redirect-lijst dekatalysatorredirects), het blogoverzicht naar de Substack.
+
+## v1.2 (01-11-2026): ervaringen, beeldmerk verplaatst, tweede podcast
+- Nieuwe sectie "Wat cliënten zeggen" met drie citaten van de oude site (Frank Roelen, Laurens van de Vijver,
+  Yvonne van den Bergh), letterlijk, alleen "Pijl snel" en een dubbel "bevrijding" gecorrigeerd.
+- Beeldmerk weg uit de opening (dubbel met de kop), nu naast "Wat de werknemer leert" (vanaf 1000px).
+- Podcastlink naar het tweede gesprek met Patrick Kicken (Spotify, april 2026). Stylesheet naar kat-v4.css.
