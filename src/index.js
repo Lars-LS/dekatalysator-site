@@ -1,9 +1,11 @@
+import { handleContact } from './contact.js';
+
 // dekatalysator.nl: statische one-pager. De Worker doet alleen redirects;
 // al het andere komt uit public/ (ASSETS).
 
 // Pagina's van de oude WordPress-site gaan naar de one-pager.
 const NAAR_HOME = new Set([
-  '/over-lars', '/over-lars-2', '/werkwijze', '/voor-wie', '/mijn-aanbod', '/contact',
+  '/over-lars', '/over-lars-2', '/voor-wie', '/mijn-aanbod', '/contact',
   '/schrijf-je-in-op-mijn-nieuwsbrief', '/privacy-statement-de-katalysator-coaching',
 ]);
 
@@ -27,6 +29,7 @@ const OUDE_BLOGS = new Set([
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === '/api/contact') return handleContact(request, env);
     if (url.hostname.startsWith('www.')) {
       url.hostname = url.hostname.slice(4);
       return Response.redirect(url.toString(), 301);

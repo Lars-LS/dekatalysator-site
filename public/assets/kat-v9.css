@@ -46,7 +46,11 @@ p{margin:0}
 .merk small{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--zacht)}
 .kop nav{display:flex;gap:22px;font-size:15px}
 .kop nav a{color:var(--tekst);text-decoration:none}.kop nav a:hover{color:var(--accent)}
-@media (max-width:760px){.kop nav{display:none}}
+.kop nav a[aria-current]{color:var(--accent)}
+@media (max-width:760px){
+  .kop .wrap{flex-wrap:wrap;gap:6px 20px;padding-top:10px;padding-bottom:8px;min-height:0}
+  .kop nav{width:100%;gap:18px;font-size:14px;overflow-x:auto;white-space:nowrap;padding-bottom:2px}
+}
 
 /* Opening */
 .opening{position:relative;overflow:hidden;padding:clamp(72px,9vw,128px) 0 clamp(72px,9vw,128px);min-height:min(78vh,720px);display:flex;align-items:center}
@@ -63,7 +67,7 @@ p{margin:0}
 }
 .opening .lead{font-size:clamp(19px,1.7vw,22px);line-height:1.55;color:var(--inkt);max-width:520px;margin-top:24px}
 .opening .toelichting{max-width:520px;margin-top:18px}
-.knop{display:inline-block;margin-top:32px;background:var(--accent);color:#fff;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:500;line-height:1.3}
+.knop{display:inline-block;margin-top:32px;background:var(--accent);color:#fff;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:500;line-height:1.3;font-size:17px;font-family:inherit;border:0;cursor:pointer}
 .knop:hover{background:var(--accent-donker);color:#fff}
 
 /* Beeldmerk naast een tekstsectie (desktop) */
@@ -126,3 +130,42 @@ p{margin:0}
 .anders{margin-top:24px;background:var(--band);border:0}
 .anders .lijst{margin:12px 0}
 .anders p+p,.anders .lijst+p{margin-top:12px}
+
+/* Paginakop van subpagina's */
+.paginakop{padding:clamp(56px,7vw,96px) 0 clamp(56px,7vw,88px)}
+.paginakop h1{max-width:16ch}
+.paginakop .lead{font-size:clamp(19px,1.7vw,22px);line-height:1.55;color:var(--inkt);max-width:560px;margin-top:22px}
+.paginakop__raster{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:clamp(32px,5vw,72px);align-items:center}
+.paginakop__raster--breed{grid-template-columns:minmax(0,1fr) minmax(0,520px)}
+.paginakop__foto{margin:0}
+.paginakop__foto img{border-radius:14px;width:100%}
+.paginakop__foto figcaption{font-size:14px;color:var(--zacht);margin-top:10px}
+@media (max-width:860px){.paginakop__raster,.paginakop__raster--breed{grid-template-columns:1fr}.paginakop__foto--staand{max-width:380px}}
+
+.breedbeeld{margin:0 0 48px}
+.breedbeeld img{border-radius:14px;width:100%}
+.verder{white-space:nowrap;font-weight:500}
+.verder::after{content:" →"}
+.vertrouwelijk-blok{margin-top:28px}
+
+/* Contact en formulier */
+.contact__raster{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(32px,5vw,72px);align-items:start}
+.contact__raster p+p{margin-top:12px}
+.contact__mail{font-size:15px;color:var(--zacht)}
+@media (max-width:860px){.contact__raster{grid-template-columns:1fr}}
+.formulier{display:grid;gap:16px;background:var(--vlak);border:1px solid var(--lijn);border-radius:14px;padding:26px}
+.formulier label{display:grid;gap:6px;font-size:15px;font-weight:500;color:var(--inkt)}
+.formulier input,.formulier textarea{font:inherit;font-weight:400;font-size:16px;color:var(--inkt);background:var(--grond);border:1px solid var(--lijn);border-radius:10px;padding:11px 14px;width:100%}
+.formulier input:focus,.formulier textarea:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--teal)}
+.formulier fieldset{border:0;margin:0;padding:0;display:grid;gap:6px}
+.formulier legend{font-size:15px;font-weight:500;color:var(--inkt);margin-bottom:6px}
+.formulier .keuze{display:flex;align-items:center;gap:10px;font-weight:400;color:var(--tekst)}
+.formulier .keuze input{width:auto;accent-color:var(--accent)}
+.formulier .knop{margin-top:4px;justify-self:start}
+.formulier__melding{font-size:15px;min-height:1.4em}
+.formulier__melding.goed{color:#2E6E3E}.formulier__melding.fout{color:var(--accent)}
+.honing{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* Voet */
+.voet__raster{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.voet nav{display:flex;flex-direction:column;gap:6px}

@@ -82,3 +82,13 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
   minder past, plus "bij een acute crisis past een andere aanpak" (uit LinkedIn-profiel).
 - "Wat je leert": oude reflexen onder druk; kaart "Anders dan veel coaching" met de lijst uit de oude Werkwijze.
 - Trajectstap Sessies: elke sessie begint met landen. CLAUDE.md bijgewerkt (ervaringen, oude teksten).
+
+## v3.0 (01-11-2026): drie pagina's, contactformulier, eigen foto's
+- Bouwstap zoals onlinebrainspotting.nl: `npm run bouw` maakt /, /werkwijze, /werkgevers en 404 uit `bouw/paginas/`.
+- /werkwijze: eerst landen, anders dan veel coaching, reflexen onder druk, waar ik mee werk, online via Zoom
+  (fjordfoto), wat je kunt verwachten. Kopfoto: terras met laptop.
+- /werkgevers: vergoeding, wat de werknemer leert, traject (offerte, facturatie), vertrouwelijkheid, over de coach.
+  Kopbeeld: collage van vier podcastfoto's.
+- Startpagina ingekort; "Wat je leert" verwijst naar /werkwijze, het traject naar /werkgevers.
+- Contactformulier op alle pagina's (src/contact.js, Resend; secret RESEND_API_KEY nodig). Mobiel menu zichtbaar.
+- Redirect /werkwijze naar / verwijderd (is nu een eigen pagina). Sitemap met drie URL's. CSS kat-v9, JS kat-v1.
