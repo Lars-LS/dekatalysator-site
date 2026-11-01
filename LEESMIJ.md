@@ -53,3 +53,4 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 ## v1.5 (01-11-2026): zesde ervaring en alle portretten
 - Jantien van der Meer toegevoegd (LinkedIn; "samen hangt" en "tegen komt" aaneengeschreven).
 - Portretten bij Bart Daman en Lucia Engel in plaats van initialen. CSS voor initialen blijft beschikbaar.
+- Maaike Pronk toegevoegd als tweede ervaring (LinkedIn), met initialen tot er een foto is.
