@@ -116,3 +116,4 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - /werkgevers volledig in de je-vorm; bij "Over de coach" het neutrale portret (coach-portret-*.jpg).
 - Lachende foto minder rood (lars-lacht2-*.jpg: rood -13%, minder verzadiging). CSS kat-v11.
 - Reactietijd: "meestal binnen een werkdag" (contactpagina en bevestiging van het formulier).
+- Voettekst: "De Katalysator Coaching" (zonder "Therapie & Intervisie").
