@@ -54,3 +54,6 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Jantien van der Meer toegevoegd (LinkedIn; "samen hangt" en "tegen komt" aaneengeschreven).
 - Portretten bij Bart Daman en Lucia Engel in plaats van initialen. CSS voor initialen blijft beschikbaar.
 - Maaike Pronk toegevoegd als tweede ervaring (LinkedIn), met initialen tot er een foto is.
+- Terug naar zes ervaringen, drie mannen en drie vrouwen, afwisselend: Frank, Maaike, Bart / Jantien, Laurens,
+  Yvonne. Lucia Engel eruit (persoonlijkst van toon); haar portretbestanden blijven in public/optimized voor een
+  eventuele wissel. Portret bij Maaike Pronk.
