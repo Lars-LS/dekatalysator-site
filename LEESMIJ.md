@@ -118,3 +118,8 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Reactietijd: "meestal binnen een werkdag" (contactpagina en bevestiging van het formulier).
 - Voettekst: "De Katalysator Coaching" (zonder "Therapie & Intervisie").
 - Kop: onderschrift alleen "Coaching" (zonder "Therapie & Intervisie"), ook in JSON-LD.
+
+## v3.5 (01-11-2026): logostreep onder de opening
+- Gekleurde streep ook onder de opening (startpagina) en onder elke paginakop; niet als de kop het laatste blok is
+  (contact, 404), om een dubbele streep boven de voet te voorkomen. Variant met een streep bij elke overgang
+  bekeken en afgewezen (te druk). Mobiel menu: "Contact" (/contact) valt weg zodat "Kennismaken" past. CSS kat-v12.

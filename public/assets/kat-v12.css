@@ -179,7 +179,7 @@ p{margin:0}
 @media (max-width:520px){.kenmerken{grid-template-columns:1fr}}
 .kennismaking__agenda{margin-top:24px;max-width:560px}
 @media (max-width:760px){.knop--klein{padding:6px 14px;font-size:14px}}
-@media (max-width:760px){.kop nav a[href="/over-mij"],.kop nav a[href="#contact"]{display:none}.kop nav{gap:16px}}
+@media (max-width:760px){.kop nav a[href="/over-mij"],.kop nav a[href="/contact"]{display:none}.kop nav{gap:16px}}
 
 /* Contactpagina en afsluitend blok */
 .paginakop.contact .contact__raster{align-items:start}
@@ -187,3 +187,8 @@ p{margin:0}
 .contact__werkgever{font-size:15px;color:var(--zacht)}
 .afsluiting .knoppen{margin-top:24px}
 .afsluiting p{max-width:620px}
+
+/* Logostreep onder de opening en onder elke paginakop */
+.opening,.paginakop{position:relative}
+.opening::after,.paginakop::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;z-index:2;background:url(/optimized/streep.png) repeat-x left center/auto 6px}
+main>.paginakop:last-child::after{display:none}
