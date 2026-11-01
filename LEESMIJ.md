@@ -123,3 +123,4 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Gekleurde streep ook onder de opening (startpagina) en onder elke paginakop; niet als de kop het laatste blok is
   (contact, 404), om een dubbele streep boven de voet te voorkomen. Variant met een streep bij elke overgang
   bekeken en afgewezen (te druk). Mobiel menu: "Contact" (/contact) valt weg zodat "Kennismaken" past. CSS kat-v12.
+- Logo met tekst voor de mailhandtekening: /optimized/handtekening-dekatalysator.png (486x144, weergave 243x72).
