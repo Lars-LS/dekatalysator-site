@@ -45,7 +45,7 @@ ${m.jsonld ? `<script type="application/ld+json">${JSON.stringify(m.jsonld)}</sc
 
 <header class="kop">
   <div class="wrap">
-    <a class="merk" href="/"><picture><source type="image/webp" srcset="/optimized/logo-112.webp 1x, /optimized/logo-224.webp 2x"><img src="/optimized/logo-112.png" srcset="/optimized/logo-224.png 2x" width="96" height="112" alt=""></picture><span><b>De Katalysator</b><small>Coaching, Therapie &amp; Intervisie</small></span></a>
+    <a class="merk" href="/"><picture><source type="image/webp" srcset="/optimized/logo-112.webp 1x, /optimized/logo-224.webp 2x"><img src="/optimized/logo-112.png" srcset="/optimized/logo-224.png 2x" width="96" height="112" alt=""></picture><span><b>De Katalysator</b><small>Coaching</small></span></a>
     <nav aria-label="Hoofdmenu">
 ${NAV.map(([href, label, id]) => `      <a href="${href}"${m.actief === id ? ' aria-current="page"' : ''}>${label}</a>`).join('\n')}
       <a class="knop knop--klein" href="/plan-kennismaking">Kennismaken</a>
