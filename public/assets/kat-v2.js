@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
         if (!res.ok) throw new Error(String(res.status));
         form.reset();
-        melding.textContent = 'Dank je wel. Je bericht is verstuurd, ik reageer meestal binnen twee werkdagen.';
+        melding.textContent = 'Dank je wel. Je bericht is verstuurd, ik reageer meestal binnen een werkdag.';
         melding.classList.add('goed');
       } catch (err) {
         melding.innerHTML = 'Het versturen lukte niet. Probeer het later opnieuw, of <a href="/plan-kennismaking">plan direct een kennismaking</a>.';

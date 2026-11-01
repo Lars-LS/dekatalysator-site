@@ -62,7 +62,7 @@ const FORMULIER = `  <section class="paginakop contact" id="contact">
         <div>
           <p class="label">Contact</p>
           <h1>Neem contact op</h1>
-          <p class="lead">Voor een vraag, een offerte of een kennismaking. Ik reageer meestal binnen twee werkdagen.</p>
+          <p class="lead">Voor een vraag, een offerte of een kennismaking. Ik reageer meestal binnen een werkdag.</p>
           <p class="contact__kennismaking">Liever meteen een moment kiezen? <a class="verder" href="/plan-kennismaking">Plan een kennismaking</a></p>
           <p class="contact__werkgever">Werkgever, HR of casemanager? Op <a href="/werkgevers">Voor werkgevers</a> lees je hoe een traject via de werkgever loopt.</p>
         </div>
