@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 const HIER = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = join(HIER, '..', 'public');
 const CSS = '/assets/kat-v11.css';
-const JS = '/assets/kat-v2.js';
+const JS = '/assets/kat-v3.js';
 const DOMEIN = 'https://dekatalysator.nl';
 
 const NAV = [
