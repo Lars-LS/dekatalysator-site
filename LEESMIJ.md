@@ -76,3 +76,9 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - "Wat je leert": extra punt over niet langer forceren; kaart "Anders dan veel coaching" (adem, spanning, energie,
   emotie; vertragen op het moment zelf), licht bewerkt: "onderstroom" en "systeem" vervangen door "lichaam".
   Stylesheet naar kat-v8.css.
+
+## v2.2 (01-11-2026): teksten van de oude pagina's Voor wie en Werkwijze
+- "Herken je dit?": vaak 'aan', veel dragen en lang volhouden, het lampje dat gaat knipperen; noot voor wie dit
+  minder past, plus "bij een acute crisis past een andere aanpak" (uit LinkedIn-profiel).
+- "Wat je leert": oude reflexen onder druk; kaart "Anders dan veel coaching" met de lijst uit de oude Werkwijze.
+- Trajectstap Sessies: elke sessie begint met landen. CLAUDE.md bijgewerkt (ervaringen, oude teksten).

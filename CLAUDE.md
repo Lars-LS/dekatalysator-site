@@ -10,7 +10,8 @@
   CookieConsent zoals op de andere sites.
 - Stijl in `public/assets/kat-vN.css`; bij wijziging N ophogen en de verwijzingen in index.html en 404.html aanpassen.
 - Workernaam `dekatalysator` niet wijzigen zodra hij bestaat.
-- Inhoudelijke grenzen: geen trauma- of therapieframing als hoofdboodschap, geen cliëntverhalen of testimonials,
-  geen tarieven ("offerte op maat"), geen feiten over Lars die niet van hem komen.
+- Inhoudelijke grenzen: geen trauma- of therapieframing als hoofdboodschap, geen cliëntverhalen behalve de
+  ervaringen die Lars zelf aanlevert (met naam en foto, letterlijk), voorlopig geen tarieven ("offerte op maat"),
+  geen feiten over Lars die niet van hem komen. Teksten van de oude WordPress-site mogen worden hergebruikt.
 - Nederlands, zonder em-dashes, actieve werkwoorden.
 - Houd LEESMIJ.md bij met een korte changelog.
