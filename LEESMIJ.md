@@ -70,3 +70,9 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Nieuwe secties "Herken je dit?" (spanning loopt op / terugkeer na uitval); trajectstappen Kennismaking, Sessies,
   Evaluatie, Zelfstandig verder, met lijniconen (Feather, MIT) in plaats van cijfers.
 - Drie logobolletjes (blauwgroen, oranje, rood) boven elke sectiekop. Stylesheet naar kat-v7.css.
+
+## v2.1 (01-11-2026): passages van de oude Katalysator-site
+- "Herken je dit?": energie die weglekt, blijven aanpassen, telkens vastlopen (uit "Je lichaam en intuïtie als kompas").
+- "Wat je leert": extra punt over niet langer forceren; kaart "Anders dan veel coaching" (adem, spanning, energie,
+  emotie; vertragen op het moment zelf), licht bewerkt: "onderstroom" en "systeem" vervangen door "lichaam".
+  Stylesheet naar kat-v8.css.

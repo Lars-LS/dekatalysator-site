@@ -123,3 +123,6 @@ p{margin:0}
 .knop--rand{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
 .knop--rand:hover{background:var(--accent);color:#fff}
 .kaart--accent{border-left:4px solid var(--teal)}
+.anders{margin-top:24px;background:var(--band);border:0}
+.anders .lijst{margin:12px 0}
+.anders p+p,.anders .lijst+p{margin-top:12px}
