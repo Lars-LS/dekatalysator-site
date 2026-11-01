@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 
 const HIER = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = join(HIER, '..', 'public');
-const CSS = '/assets/kat-v9.css';
-const JS = '/assets/kat-v1.js';
+const CSS = '/assets/kat-v10.css';
+const JS = '/assets/kat-v2.js';
 const DOMEIN = 'https://dekatalysator.nl';
 
 const NAV = [
@@ -48,6 +48,7 @@ ${m.jsonld ? `<script type="application/ld+json">${JSON.stringify(m.jsonld)}</sc
     <a class="merk" href="/"><picture><source type="image/webp" srcset="/optimized/logo-112.webp 1x, /optimized/logo-224.webp 2x"><img src="/optimized/logo-112.png" srcset="/optimized/logo-224.png 2x" width="96" height="112" alt=""></picture><span><b>De Katalysator</b><small>Coaching, Therapie &amp; Intervisie</small></span></a>
     <nav aria-label="Hoofdmenu">
 ${NAV.map(([href, label, id]) => `      <a href="${href}"${m.actief === id ? ' aria-current="page"' : ''}>${label}</a>`).join('\n')}
+      <a class="knop knop--klein" href="/plan-kennismaking">Kennismaken</a>
     </nav>
   </div>
 </header>
@@ -60,8 +61,8 @@ const CONTACT = `  <section class="sectie sectie--band contact" id="contact">
       <div class="contact__raster">
         <div>
           <h2>Contact</h2>
-          <p>Voor een kennismaking, een offerte of een vraag. Ik reageer meestal binnen twee werkdagen.</p>
-          <p class="contact__mail">Liever direct mailen: <a href="mailto:lars@dekatalysator.nl">lars@dekatalysator.nl</a></p>
+          <p>Voor een vraag of een offerte. Ik reageer meestal binnen twee werkdagen.</p>
+          <p>Liever meteen een moment kiezen? <a class="verder" href="/plan-kennismaking">Plan een kennismaking</a></p>
         </div>
         <form class="formulier" action="/api/contact" method="post" novalidate>
           <label>Naam<input name="naam" autocomplete="name" required maxlength="120"></label>
@@ -98,7 +99,8 @@ const VOET = `
       <a href="/">Home</a>
       <a href="/werkwijze">Werkwijze</a>
       <a href="/werkgevers">Voor werkgevers</a>
-      <a href="mailto:lars@dekatalysator.nl">lars@dekatalysator.nl</a>
+      <a href="/plan-kennismaking">Plan een kennismaking</a>
+      <a href="/#contact">Contact</a>
     </nav>
   </div>
 </footer>

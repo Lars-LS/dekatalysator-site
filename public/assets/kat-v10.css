@@ -169,3 +169,14 @@ p{margin:0}
 /* Voet */
 .voet__raster{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
 .voet nav{display:flex;flex-direction:column;gap:6px}
+
+/* Knop in de navigatie en kennismakingspagina */
+.knop--klein{margin-top:0;padding:9px 18px;font-size:15px;color:#fff !important}
+.kop nav{align-items:center}
+.kenmerken{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 24px;margin-top:28px}
+.kenmerken h3{font-size:20px;margin-bottom:2px}
+.kenmerken p{font-size:15px;color:var(--zacht)}
+@media (max-width:520px){.kenmerken{grid-template-columns:1fr}}
+.kennismaking__agenda{margin-top:24px;max-width:560px}
+@media (max-width:760px){.knop--klein{padding:6px 14px;font-size:14px}}
+@media (max-width:760px){.kop nav a[href="/#over"],.kop nav a[href="#contact"]{display:none}.kop nav{gap:16px}}

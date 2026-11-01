@@ -16,8 +16,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-<link rel="stylesheet" href="/assets/kat-v9.css">
-<script src="/assets/kat-v1.js" defer></script>
+<link rel="stylesheet" href="/assets/kat-v10.css">
+<script src="/assets/kat-v2.js" defer></script>
 
 </head>
 <body>
@@ -31,6 +31,7 @@
       <a href="/werkgevers" aria-current="page">Voor werkgevers</a>
       <a href="/#over">Over mij</a>
       <a href="#contact">Contact</a>
+      <a class="knop knop--klein" href="/plan-kennismaking">Kennismaken</a>
     </nav>
   </div>
 </header>
@@ -125,8 +126,8 @@
       <div class="contact__raster">
         <div>
           <h2>Contact</h2>
-          <p>Voor een kennismaking, een offerte of een vraag. Ik reageer meestal binnen twee werkdagen.</p>
-          <p class="contact__mail">Liever direct mailen: <a href="mailto:lars@dekatalysator.nl">lars@dekatalysator.nl</a></p>
+          <p>Voor een vraag of een offerte. Ik reageer meestal binnen twee werkdagen.</p>
+          <p>Liever meteen een moment kiezen? <a class="verder" href="/plan-kennismaking">Plan een kennismaking</a></p>
         </div>
         <form class="formulier" action="/api/contact" method="post" novalidate>
           <label>Naam<input name="naam" autocomplete="name" required maxlength="120"></label>
@@ -161,7 +162,8 @@
       <a href="/">Home</a>
       <a href="/werkwijze">Werkwijze</a>
       <a href="/werkgevers">Voor werkgevers</a>
-      <a href="mailto:lars@dekatalysator.nl">lars@dekatalysator.nl</a>
+      <a href="/plan-kennismaking">Plan een kennismaking</a>
+      <a href="/#contact">Contact</a>
     </nav>
   </div>
 </footer>

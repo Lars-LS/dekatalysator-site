@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         melding.textContent = 'Dank je wel. Je bericht is verstuurd, ik reageer meestal binnen twee werkdagen.';
         melding.classList.add('goed');
       } catch (err) {
-        melding.innerHTML = 'Het versturen lukte niet. Mail me direct: <a href="mailto:lars@dekatalysator.nl">lars@dekatalysator.nl</a>.';
+        melding.innerHTML = 'Het versturen lukte niet. Probeer het later opnieuw, of <a href="/plan-kennismaking">plan direct een kennismaking</a>.';
         melding.classList.add('fout');
       } finally {
         knop.disabled = false;

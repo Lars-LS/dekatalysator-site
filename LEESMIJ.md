@@ -92,3 +92,9 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Startpagina ingekort; "Wat je leert" verwijst naar /werkwijze, het traject naar /werkgevers.
 - Contactformulier op alle pagina's (src/contact.js, Resend; secret RESEND_API_KEY nodig). Mobiel menu zichtbaar.
 - Redirect /werkwijze naar / verwijderd (is nu een eigen pagina). Sitemap met drie URL's. CSS kat-v9, JS kat-v1.
+
+## v3.1 (01-11-2026): mailadres weg, kennismakingspagina
+- Mailadres overal van de site gehaald (contactblok, voet, JSON-LD, foutmelding formulier).
+- Nieuwe pagina /plan-kennismaking (30 minuten, gratis, Proton Calendar, zelfde boekingslink als onlinebrainspotting.nl),
+  knop "Kennismaken" in de navigatie; op mobiel vallen "Over mij" en "Contact" weg uit de bovenbalk.
+- Formulier verstuurt nu als formulier@dekatalysator.nl via een eigen Resend-account. CSS kat-v10, JS kat-v2.

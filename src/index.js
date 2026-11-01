@@ -7,6 +7,7 @@ import { handleContact } from './contact.js';
 const NAAR_HOME = new Set([
   '/over-lars', '/over-lars-2', '/voor-wie', '/mijn-aanbod', '/contact',
   '/schrijf-je-in-op-mijn-nieuwsbrief', '/privacy-statement-de-katalysator-coaching',
+  '/mijn-aanbod/je-lichaam-en-intuitie-als-kompas', '/mijn-aanbod/begeleide-intervisie',
 ]);
 
 // Oude blogberichten gaan naar hetzelfde bericht op de Substack (/p/<slug>),

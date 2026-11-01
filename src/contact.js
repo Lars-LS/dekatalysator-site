@@ -1,9 +1,8 @@
 // Contactformulier dekatalysator.nl: POST /api/contact (JSON) -> e-mail via Resend.
 // Secret RESEND_API_KEY moet op de Worker "dekatalysator" staan (Settings, Variables and Secrets).
-// Afzender gebruikt het al geverifieerde verzenddomein van onlinebrainspotting.nl; wordt dekatalysator.nl
-// in Resend geverifieerd, dan kan VAN naar formulier@dekatalysator.nl.
+// Eigen Resend-account voor dekatalysator.nl; het domein moet daar geverifieerd zijn (DNS-records in Cloudflare).
 const AAN = 'lars@dekatalysator.nl';
-const VAN = 'De Katalysator <formulier@onlinebrainspotting.nl>';
+const VAN = 'De Katalysator <formulier@dekatalysator.nl>';
 
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
