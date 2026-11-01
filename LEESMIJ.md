@@ -42,3 +42,6 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
   Yvonne van den Bergh), letterlijk, alleen "Pijl snel" en een dubbel "bevrijding" gecorrigeerd.
 - Beeldmerk weg uit de opening (dubbel met de kop), nu naast "Wat de werknemer leert" (vanaf 1000px).
 - Podcastlink naar het tweede gesprek met Patrick Kicken (Spotify, april 2026). Stylesheet naar kat-v4.css.
+
+## v1.3 (01-11-2026): ervaringen Bart Daman en Lucia Engel
+- Twee aanbevelingen van LinkedIn (2021) toegevoegd; bij Lucia een passage weggelaten (…) en "carriére" gecorrigeerd.
