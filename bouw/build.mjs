@@ -13,7 +13,7 @@ const DOMEIN = 'https://dekatalysator.nl';
 
 const NAV = [
   ['/werkwijze', 'Werkwijze', 'werkwijze'],
-  ['/#over', 'Over mij', 'over'],
+  ['/over-mij', 'Over mij', 'over'],
   ['/werkgevers', 'Voor werkgevers', 'werkgevers'],
   ['#contact', 'Contact', 'contact'],
 ];
@@ -98,6 +98,7 @@ const VOET = `
     <nav aria-label="Voet">
       <a href="/">Home</a>
       <a href="/werkwijze">Werkwijze</a>
+      <a href="/over-mij">Over mij</a>
       <a href="/werkgevers">Voor werkgevers</a>
       <a href="/plan-kennismaking">Plan een kennismaking</a>
       <a href="/#contact">Contact</a>
@@ -112,7 +113,8 @@ for (const naam of readdirSync(join(HIER, 'paginas')).filter((f) => f.endsWith('
   const bron = readFileSync(join(HIER, 'paginas', naam), 'utf8');
   const eerste = bron.indexOf('\n');
   const m = JSON.parse(bron.slice(4, eerste).replace(/-->\s*$/, ''));
-  const inhoud = bron.slice(eerste + 1).replace('{{CONTACT}}', CONTACT);
+  const contact = m.contactLicht ? CONTACT.replace('sectie sectie--band contact', 'sectie contact') : CONTACT;
+  const inhoud = bron.slice(eerste + 1).replace('{{CONTACT}}', contact);
   const html = kop(m) + inhoud + VOET;
   const doel = naam === 'index.html' ? join(PUBLIC, 'index.html')
     : naam === '404.html' ? join(PUBLIC, '404.html')

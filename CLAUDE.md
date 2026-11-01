@@ -1,7 +1,7 @@
 # dekatalysator.nl — werkafspraken voor Claude
 
 - Site voor wie coaching zoekt bij stress en veerkracht in het werk (je-vorm, geen therapie als hoofdboodschap).
-  Pagina's: / (start), /werkwijze (de diepte), /plan-kennismaking (Proton Calendar-link) en /werkgevers (u-vorm, voor HR, casemanagers en bedrijfsartsen:
+  Pagina's: / (start), /werkwijze (de diepte), /over-mij, /plan-kennismaking (Proton Calendar-link) en /werkgevers (u-vorm, voor HR, casemanagers en bedrijfsartsen:
   vergoeding, traject, offerte, facturatie, vertrouwelijkheid). Deze link kan op offertes en in de mailhandtekening.
 - Cloudflare Worker, zelfde opzet als onlinebrainspotting.nl en norwayretreat.com: `public/` = pagina en assets,
   `src/index.js` = alleen redirects (oude WordPress-paden), `wrangler.jsonc` = config.

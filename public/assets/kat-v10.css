@@ -179,4 +179,4 @@ p{margin:0}
 @media (max-width:520px){.kenmerken{grid-template-columns:1fr}}
 .kennismaking__agenda{margin-top:24px;max-width:560px}
 @media (max-width:760px){.knop--klein{padding:6px 14px;font-size:14px}}
-@media (max-width:760px){.kop nav a[href="/#over"],.kop nav a[href="#contact"]{display:none}.kop nav{gap:16px}}
+@media (max-width:760px){.kop nav a[href="/over-mij"],.kop nav a[href="#contact"]{display:none}.kop nav{gap:16px}}

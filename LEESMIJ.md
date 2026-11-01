@@ -103,3 +103,9 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Nieuwe versie van de kopfoto op /werkwijze (werkwijze-terras2-*.jpg).
 - Formuliermail met platte-tekstversie naast HTML, onderwerp "Contactformulier: naam (rol)".
 - Menuvolgorde: Werkwijze, Over mij, Voor werkgevers, Contact, Kennismaken.
+
+## v3.3 (01-11-2026): pagina Over mij
+- Nieuwe pagina /over-mij: kop met foto en knoppen (kennismaking, LinkedIn), eigen pad, achtergrond en opleiding,
+  podcastcollage met link, Verder kijken. Menu "Over mij" en oude /over-lars(-2) wijzen er nu naartoe.
+- Startpagina: Over mij ingekort met link "Meer over mij"; Verder kijken verhuisd naar /over-mij.
+- Contactblok licht (zonder band) op pagina's waar de sectie ervoor al een band heeft (metadata contactLicht).

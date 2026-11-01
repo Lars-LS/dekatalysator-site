@@ -5,7 +5,7 @@ import { handleContact } from './contact.js';
 
 // Pagina's van de oude WordPress-site gaan naar de one-pager.
 const NAAR_HOME = new Set([
-  '/over-lars', '/over-lars-2', '/voor-wie', '/mijn-aanbod', '/contact',
+  '/voor-wie', '/mijn-aanbod', '/contact',
   '/schrijf-je-in-op-mijn-nieuwsbrief', '/privacy-statement-de-katalysator-coaching',
   '/mijn-aanbod/je-lichaam-en-intuitie-als-kompas', '/mijn-aanbod/begeleide-intervisie',
 ]);
@@ -27,6 +27,8 @@ const OUDE_BLOGS = new Set([
   'wat-doet-ai-met-je-eigenheid', 'berg-in-de-storm-zijn',
 ]);
 
+const NAAR_OVER = new Set(['/over-lars', '/over-lars-2']);
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -36,6 +38,7 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
     const pad = url.pathname.replace(/\/+$/, '') || '/';
+    if (NAAR_OVER.has(pad)) return Response.redirect(url.origin + '/over-mij', 301);
     if (NAAR_HOME.has(pad)) return Response.redirect(url.origin + '/', 301);
     const slug = pad.slice(1);
     if (OUDE_BLOGS.has(slug)) return Response.redirect(SUBSTACK + 'p/' + slug, 301);
