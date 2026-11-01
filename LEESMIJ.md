@@ -32,3 +32,7 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 ## v1.0 (01-11-2026): klaar voor livegang
 - Werkwijze aangevuld met doorverwijzing buiten deskundigheid en opleiding; alinea gesplitst.
 - Alle teksten bevestigd door Lars. Uitlegbalk en markeringen (.ph/.vs) verwijderd.
+
+## v1.1 (01-11-2026): oude blogadressen naar het juiste Substack-bericht
+- Worker stuurt oude blogpaden door naar https://lars.lutjeschipholt.nl/p/<slug> (zelfde slugs als de
+  Bulk Redirect-lijst dekatalysatorredirects), het blogoverzicht naar de Substack.
