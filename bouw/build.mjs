@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const HIER = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = join(HIER, '..', 'public');
-const CSS = '/assets/kat-v12.css';
+const CSS = '/assets/kat-v13.css';
 const JS = '/assets/kat-v3.js';
 const DOMEIN = 'https://dekatalysator.nl';
 
@@ -113,6 +113,12 @@ const VOET = `
       <a href="/werkgevers">Voor werkgevers</a>
       <a href="/plan-kennismaking">Plan een kennismaking</a>
       <a href="/contact">Contact</a>
+    </nav>
+    <nav aria-label="Andere sites van Lars">
+      <span class="voet__kop">Ook van Lars</span>
+      <a href="https://onlinebrainspotting.nl/" rel="noopener">Online Brainspotting</a>
+      <a href="https://norwayretreat.com/" rel="noopener">Retraites in Noorwegen</a>
+      <a href="https://lars.lutjeschipholt.nl/" rel="noopener">Blog</a>
     </nav>
   </div>
 </footer>

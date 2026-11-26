@@ -124,3 +124,8 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
   (contact, 404), om een dubbele streep boven de voet te voorkomen. Variant met een streep bij elke overgang
   bekeken en afgewezen (te druk). Mobiel menu: "Contact" (/contact) valt weg zodat "Kennismaken" past. CSS kat-v12.
 - Logo met tekst voor de mailhandtekening: /optimized/handtekening-dekatalysator.png (486x144, weergave 243x72).
+
+## v3.6 (26-11-2026): verwijzingen naar de andere sites
+- Voet op alle pagina's: kolom "Ook van Lars" met Online Brainspotting, Retraites in Noorwegen en Blog.
+- /werkwijze: bij Brainspotting een link naar onlinebrainspotting.nl. Startpagina: JSON-LD `sameAs` met de andere
+  sites en LinkedIn. /werkgevers bewust zonder extra verwijzing naar Brainspotting. CSS kat-v13.
