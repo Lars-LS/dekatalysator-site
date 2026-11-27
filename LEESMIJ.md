@@ -129,3 +129,4 @@ Zakelijke one-pager van De Katalysator Coaching, Therapie & Intervisie (handelsn
 - Voet op alle pagina's: kolom "Ook van Lars" met Online Brainspotting, Retraites in Noorwegen en Blog.
 - /werkwijze: bij Brainspotting een link naar onlinebrainspotting.nl. Startpagina: JSON-LD `sameAs` met de andere
   sites en LinkedIn. /werkgevers bewust zonder extra verwijzing naar Brainspotting. CSS kat-v13.
+- Voet: kop "Andere websites" (was "Ook van Lars"), "Substack blogs" (was "Blog").
